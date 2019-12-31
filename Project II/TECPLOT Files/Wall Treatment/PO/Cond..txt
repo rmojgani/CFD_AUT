@@ -1,0 +1,15 @@
+P Cell Old
+
+
+DOUBLE PRECISION								:: R=287.d0			! Gas Constant
+DOUBLE PRECISION								:: gamma=1.4		! Gas Specific Heat Ratio
+! ------------------------------ Flow Property
+DOUBLE PRECISION								:: Minf=1.2d0		! M? [---]
+DOUBLE PRECISION								:: AoA=7.0d0		! ?	 [deg]
+DOUBLE PRECISION								:: Tinf=300.d0		! T? [K]
+DOUBLE PRECISION								:: Pinf=101325.d0	! P? [Pa]
+! ------------------------------ Solver Tune
+DOUBLE PRECISION								:: CFL=6.0d-1		! CFL Criteria Parameter
+DOUBLE PRECISION								:: ResCrit=1.d-12	! Mean Residual Stop Criteria
+INTEGER											:: itimeResRep=50	! Residual Report Interval
+INTEGER											:: ntime=100000		! Time Loop Limit

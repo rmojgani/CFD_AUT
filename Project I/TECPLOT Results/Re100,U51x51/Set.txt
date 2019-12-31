@@ -1,0 +1,12 @@
+INTEGER, PARAMETER								 :: IE=51, JE=51
+INTEGER											 :: niter=50,ntime=10
+DOUBLE PRECISION								 :: dt=100.d0
+DOUBLE PRECISION, PARAMETER						 :: lx=1.d0,ly=1.d0
+DOUBLE PRECISION, PARAMETER						 :: thx=0.d0,thy=0.d0
+DOUBLE PRECISION, PARAMETER						 :: density=1.d0,U=1.d0,Rey=100.d0
+DOUBLE PRECISION, PARAMETER						 :: Tdiffusivity=1.75d-3
+DOUBLE PRECISION, PARAMETER						 :: viscosity=(density*U*lx)/Rey
+DOUBLE PRECISION, DIMENSION(4)					 :: Temp=(/500.d0,100.d0,100.d0,100.d0/) !(/Up, Left , Down , Right/)
+CHARACTER		, PARAMETER						 :: testdiff='F' ! Do you want to test diffusion term? F for no, T for yes
+CHARACTER		, PARAMETER						 :: BLrGrid ='F' ! Do you want use Boundary Layer Grid? F for no, T for yes
+DOUBLE PRECISION, PARAMETER						 :: dens=10.0d0  ! Grid Wall denser parameter
